@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     Button b1, b2;
     String s1, s2;
     String s3 = "Wrong password";
-
+    EditText et1,et2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         b1 = findViewById(R.id.login);
         b2 = findViewById(R.id.forpass);
+        et1 = findViewById(R.id.usrnm);
+        et2 = findViewById(R.id.pass);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
